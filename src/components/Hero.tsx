@@ -1,12 +1,13 @@
 import { motion } from "framer-motion";
 import { Github, Linkedin, Instagram, Mail, ArrowDown, FileText } from "lucide-react";
+import avatarImg from "@/assets/avatar.png";
 
 const Hero = () => {
   const socialLinks = [
     { icon: Github, href: "https://github.com/yvishal30", label: "GitHub" },
     { icon: Linkedin, href: "https://www.linkedin.com/in/vishal-yadav-4a9742280/", label: "LinkedIn" },
     { icon: Instagram, href: "https://www.instagram.com/vishal_yadav_30", label: "Instagram" },
-    { icon: Mail, href: "mailto:vishalyadav@example.com", label: "Email" },
+    { icon: Mail, href: "mailto:30vishalyadav@gmail.com", label: "Email" },
   ];
 
   return (
@@ -89,7 +90,8 @@ const Hero = () => {
                 View My Work
               </motion.a>
               <motion.a
-                href="#contact"
+                href="/Vishal_Yadav_Resume.pdf"
+                download="Vishal_Yadav_Resume.pdf"
                 className="px-8 py-3 rounded-full border border-border text-foreground font-semibold flex items-center justify-center gap-2 hover:bg-secondary transition-all"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -140,7 +142,7 @@ const Hero = () => {
               >
                 <div className="w-full h-full rounded-full bg-gradient-to-br from-card to-secondary flex items-center justify-center overflow-hidden">
                   <img
-                    src="https://avatars.githubusercontent.com/u/139621507?v=4"
+                    src={avatarImg}
                     alt="Vishal Yadav"
                     className="w-full h-full object-cover"
                   />
