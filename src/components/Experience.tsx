@@ -6,10 +6,10 @@ import { Briefcase, GraduationCap, Calendar } from "lucide-react";
 const experiences = [
   {
     type: "work",
-    title: "Intern - Web Development",
-    company: "TechnoHacks",
-    period: "2023",
-    description: "Developed web applications and gained hands-on experience with HTML, CSS, JavaScript. Built projects including a calculator and various UI components.",
+    title: "Linux System Administrator",
+    company: "Sequretek Pvt. Ltd.",
+    period: "Feb 2024 - Sep 2024",
+    description: "Conducted Vulnerability and Compliance Assessments. Applied OS patching via RPM and YUM. Implemented server hardening to minimize attack surfaces and enhance protection.",
   },
   {
     type: "work",
