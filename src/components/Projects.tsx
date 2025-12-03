@@ -5,6 +5,14 @@ import { Github, ExternalLink, Folder } from "lucide-react";
 
 const projects = [
   {
+    title: "Real Estate Portal",
+    description: "Full-stack MERN application with secure role-based access for Admin, Agent, and Client. Features portfolio creation with property listings, image carousels, and responsive UI with Tailwind CSS.",
+    tech: ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS"],
+    github: "https://github.com/yvishal30",
+    live: "https://real-estate-portal-nine.vercel.app/",
+    featured: true,
+  },
+  {
     title: "Voice Authentication System",
     description: "A deep-learning based Speaker Recognition system using MFCC features, CNN/LSTM models, and VoxCeleb dataset. Complete pipeline for preprocessing, training, evaluation, and custom dataset handling.",
     tech: ["MATLAB", "Deep Learning", "CNN", "LSTM", "Signal Processing"],
@@ -16,13 +24,6 @@ const projects = [
     description: "A full-stack application that predicts heart disease risk using machine learning algorithms. Features an intuitive UI for data input and real-time predictions.",
     tech: ["JavaScript", "Node.js", "Machine Learning", "REST API"],
     github: "https://github.com/yvishal30/heart-disease-predictor",
-    featured: true,
-  },
-  {
-    title: "Blood Bank Management System",
-    description: "Dynamic blood bank management system providing contact and address details to patients requiring specific blood types. Features donor registration and inventory management.",
-    tech: ["PHP", "MySQL", "Bootstrap 5", "HTML", "CSS"],
-    github: "https://github.com/yvishal30/blood_bank_management_system",
     featured: true,
   },
   {
@@ -132,14 +133,16 @@ const Projects = () => {
                   >
                     <Github size={20} />
                   </a>
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    <ExternalLink size={20} />
-                  </a>
+                  {project.live && (
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      <ExternalLink size={20} />
+                    </a>
+                  )}
                 </div>
               </div>
             </motion.div>
